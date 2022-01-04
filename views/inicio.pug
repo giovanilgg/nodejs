@@ -1,0 +1,38 @@
+extends ./layouts/index
+
+block slider 
+    .slider  
+        h1 Rio de Janeiro 
+        em aventura 
+block contenido 
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5 
+            .col-md-6
+                p   
+                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus nulla, ac suscipit mauris suscipit vitae. Cras sodales molestie blandit. Suspendisse potenti.
+                    |Donec vel tincidunt ex. Vestibulum venenatis at ante sit amet iaculis. 
+                    
+                p   
+                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue lectus nulla, ac suscipit mauris suscipit vitae. Cras sodales molestie blandit. Suspendisse potenti.
+                    |Donec vel tincidunt ex. Vestibulum venenatis at ante sit amet iaculis. 
+                    
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen viajes de inicio",class="rounded-circle img-fluid")
+        include ./layouts/bloque_viajes
+    
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje 
+                        p.fecha 20 de marzo de 2022- 28 de marzo de 2022
+                        p.precio $2,500 USD
+    main.container.mt-5 
+        include ./layouts/bloque_testimoniales
+       
+
+
+
